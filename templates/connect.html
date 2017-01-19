@@ -1,0 +1,53 @@
+{% extends "templates/base.html" %}
+{% block content %}
+	<div class="pagetitle">
+		<p>Connect With Us</p>
+	</div>
+
+	<div class="contactUsButtons">
+		<button type="button"><a href="newfeature.html">Propose a Feature</a></button>
+		<button type="button"><a href="foundbug.html">Report a Bug</a></button>
+		<button type="button" class="active"><a href="connect.html">Connect With Us</a></button>
+	</div>
+
+	
+	<div class="connect">
+		<div class="personContainer">
+			<div class="personPic">
+				<img src="static/nick.png" alt="Nick Reitnour"/>
+			</div>
+			<div class="personSpecialization">
+				<h3>Nick Reitnour</h3>
+				<p><i>Contact For:</i> investment model, algorithm intricacies, website functionality</p>
+				<a href="mailto:nreit@umich.edu"><img src="static/email.png" alt="Send Email"/></a>
+				<a href="https://www.linkedin.com/in/nick-reitnour-022b5448"><img src="static/linkedin.png" alt="Connect on Linkedin"/></a>
+			</div>
+		</div>
+
+		<div class="personContainer">
+			<div class="personPic">
+				<img src="static/rob.png" alt="Rob Zonino"/>
+			</div>
+			<div class="personSpecialization">
+				<h3>Rob Zonino</h3>
+				<p><i>Contact For:</i> client relations, custom-built solutions</p>
+				<a href="mailto:dayzo@umich.edu"><img src="static/email.png" alt="Send Email"/></a>
+				<a href="https://www.linkedin.com/in/robert-zonino-b6b643a9"><img src="static/linkedin.png" alt="Connect on Linkedin"/></a>
+			</div>
+		</div>
+
+		<div class="personContainer">
+			<div class="personPic">
+				<img src="static/brian.png" alt="Brian Archer"/>
+			</div>
+			<div class="personSpecialization">
+				<h3>Brian Archer</h3>
+				<p><i>Contact For:</i> quality assurance, server-side functionality</p>
+				<a href="mailto:bwa@umich.edu"><img src="static/email.png" alt="Send Email"/></a>
+				<a href="https://www.linkedin.com/in/brian-archer-802b22a6"><img src="static/linkedin.png" alt="Connect on Linkedin"/>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

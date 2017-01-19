@@ -1,0 +1,682 @@
+{% extends "templates/base.html" %}
+{% block content %}
+<div class="pagetitle">
+	<p>Test Results</p>
+</div>
+
+<div class="experimentOverview">
+	<p>We set out to design an experiment to adequately capture and compare the level of improvement Otto's algorithm has over an ordinary investment strategy. In order to do so we created six, 2-stock experiments that were chosen at random after being grouped by volatility similarity.<br/>
+	<br/>The experiment started on March 8, 2016 and every day at the closing price for the next sixteen days $50,000 was invested between the two given stocks. The 'control' portfolio simply invested the money 50%/50% between the two stocks. The 'experiment' portfolio used Otto's algorithm (with the objective to maximize return-to-risk tradeoff) to determine the optimal way to allocate the money between the two stocks each day. This portion of the experiment ran from March 8th until March 24th, 2016.<br/>
+	<br/>After this first part of the experiment, the portfolios have been left to sit so the investments could play out. The results were then have since been tabulated at every week since, and <b>what we have found is astonishing</b>:
+	<br/>
+</div>
+
+<div class="experimentsContainer">
+	<div class="experimentBlock">
+		<p>Experiment #1</p>
+		<img src="static/experiment1.png" alt="AT&amp;T &amp; J&amp;J" />
+		<table>
+			<tr>
+				<td><b> Date </b></td>
+				<td><b> $ T </b></td>
+				<td><b> $ JNJ </b></td>
+				<td><b> % T </b></td>
+				<td><b> % JNJ </b></td>
+			</tr>
+			<tr>
+				<td> 3/8/16 </td>
+				<td> $38.09 </td>
+				<td> $106.22 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/9/16 </td>
+				<td> $37.98 </td>
+				<td> $106.84 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/10/16 </td>
+				<td> $38.31 </td>
+				<td> $107.14 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/11/16 </td>
+				<td> $38.36 </td>
+				<td> $107.71 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/14/16 </td>
+				<td> $38.32 </td>
+				<td> $107.66 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/15/16 </td>
+				<td> $38.52 </td>
+				<td> $107.76 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/16/16 </td>
+				<td> $38.77 </td>
+				<td> $107.41 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/17/16 </td>
+				<td> $39.12 </td>
+				<td> $106.74 </td>
+				<td> 0% </td>
+				<td> 100% </td>
+			</tr>
+			<tr>
+				<td> 3/18/16 </td>
+				<td> $38.56 </td>
+				<td> $107.50 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/21/16 </td>
+				<td> $38.92 </td>
+				<td> $107.28 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/22/16 </td>
+				<td> $38.63 </td>
+				<td> $107.38 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/23/16 </td>
+				<td> $38.54 </td>
+				<td> $108.50 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/24/16 </td>
+				<td> $38.88 </td>
+				<td> $107.31 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+		</table>
+		<br/>
+		<div class="resultStatement">
+			<span>
+				As of 6/3/16, the 'Otto' portfolio outperformed the 50/50 'control' portfolio by 1.24%
+			</span>
+		</div>
+	</div>
+	<div class="experimentBlock">
+		<p>Experiment #2</p>
+		<img src="static/experiment2.png" alt="UPS &amp; Comcast" />
+		<table>
+			<tr>
+				<td><b> Date </b></td>
+				<td><b> $ UPS </b></td>
+				<td><b> $ CMCSA </b></td>
+				<td><b> % UPS </b></td>
+				<td><b> % CMCSA </b></td>
+			</tr>
+			<tr>
+				<td> 3/8/16 </td>
+				<td> $100.62 </td>
+				<td> $58.29 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/9/16 </td>
+				<td> $99.56 </td>
+				<td> $58.78 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/10/16 </td>
+				<td> $99.87 </td>
+				<td> $58.37 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/11/16 </td>
+				<td> $100.82 </td>
+				<td> $59.16 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/14/16 </td>
+				<td> $101.29 </td>
+				<td> $59.23 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/15/16 </td>
+				<td> $101.42 </td>
+				<td> $59.40 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/16/16 </td>
+				<td> $101.67 </td>
+				<td> $59.91 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/17/16 </td>
+				<td> $103.75 </td>
+				<td> $60.75 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/18/16 </td>
+				<td> $104.99 </td>
+				<td> $59.76 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/21/16 </td>
+				<td> $105.15 </td>
+				<td> $59.84 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/22/16 </td>
+				<td> $104.86 </td>
+				<td> $59.87 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/23/16 </td>
+				<td> $104.88 </td>
+				<td> $59.21 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/24/16 </td>
+				<td> $105.43 </td>
+				<td> $60.01 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+		</table>
+		<br/>
+		<div class="resultStatement">
+			<span>
+				As of 6/3/16, the 'Otto' portfolio outperformed the 50/50 'control' portfolio by 1.97%
+			</span>
+		</div>
+	</div>
+	<div class="experimentBlock">
+		<p>Experiment #3</p>
+		<img src="static/experiment3.png" alt="Twitter &amp; Alcoa" />
+		<table>
+			<tr>
+				<td><b> Date </b></td>
+				<td><b> $ TWTR </b></td>
+				<td><b> $ AA </b></td>
+				<td><b> % TWTR </b></td>
+				<td><b> % AA </b></td>
+			</tr>
+			<tr>
+				<td> 3/8/16 </td>
+				<td> $18.33 </td>
+				<td> $9.33 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/9/16 </td>
+				<td> $17.66 </td>
+				<td> $9.42 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/10/16 </td>
+				<td> $16.61 </td>
+				<td> $9.59 </td>
+				<td> 80% </td>
+				<td> 20% </td>
+			</tr>
+			<tr>
+				<td> 3/11/16 </td>
+				<td> $16.81 </td>
+				<td> $9.52 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/14/16 </td>
+				<td> $17.12 </td>
+				<td> $9.67 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/15/16 </td>
+				<td> $16.19 </td>
+				<td> $9.16 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/16/16 </td>
+				<td> $16.70 </td>
+				<td> $9.74 </td>
+				<td> 70% </td>
+				<td> 30% </td>
+			</tr>
+			<tr>
+				<td> 3/17/16 </td>
+				<td> $16.85 </td>
+				<td> $9.94 </td>
+				<td> 90% </td>
+				<td> 10% </td>
+			</tr>
+			<tr>
+				<td> 3/18/16 </td>
+				<td> $16.85 </td>
+				<td> $10.03 </td>
+				<td> 90% </td>
+				<td> 10% </td>
+			</tr>
+			<tr>
+				<td> 3/21/16 </td>
+				<td> $16.89 </td>
+				<td> $9.89 </td>
+				<td> 70% </td>
+				<td> 30% </td>
+			</tr>
+			<tr>
+				<td> 3/22/16 </td>
+				<td> $16.86 </td>
+				<td> $9.85 </td>
+				<td> 70% </td>
+				<td> 30% </td>
+			</tr>
+			<tr>
+				<td> 3/23/16 </td>
+				<td> $16.01 </td>
+				<td> $9.32 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/24/16 </td>
+				<td> $15.91 </td>
+				<td> $9.57 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+		</table>
+		<br/>
+		<div class="resultStatement">
+			<span>
+				As of 6/3/2016, the 'Otto' portfolio outperformed the 50/50 'control' portfolio by 1.22%
+			</span>
+		</div>
+	</div>
+	<div class="experimentBlock">
+		<p>Experiment #4</p>
+		<img src="static/experiment4.png" alt="Nike &amp; Google" />
+		<table>
+			<tr>
+				<td><b> Date </b></td>
+				<td><b> $ NKE </b></td>
+				<td><b> $ GOOG </b></td>
+				<td><b> % NKE </b></td>
+				<td><b> % GOOG </b></td>
+			</tr>
+			<tr>
+				<td> 3/8/16 </td>
+				<td> $59.81 </td>
+				<td> $693.97 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/9/16 </td>
+				<td> $58.33 </td>
+				<td> $705.24 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/10/16 </td>
+				<td> $58.88 </td>
+				<td> $712.82 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/11/16 </td>
+				<td> $60.08 </td>
+				<td> $726.82 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/14/16 </td>
+				<td> $60.81 </td>
+				<td> $730.49 </td>
+				<td> 20% </td>
+				<td> 80% </td>
+			</tr>
+			<tr>
+				<td> 3/15/16 </td>
+				<td> $61.40 </td>
+				<td> $728.33 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/16/16 </td>
+				<td> $61.86 </td>
+				<td> $736.09 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/17/16 </td>
+				<td> $63.18 </td>
+				<td> $737.65 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/18/16 </td>
+				<td> $62.99 </td>
+				<td> $737.60 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/21/16 </td>
+				<td> $64.72 </td>
+				<td> $742.09 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/22/16 </td>
+				<td> $64.90 </td>
+				<td> $740.75 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/23/16 </td>
+				<td> $62.44 </td>
+				<td> $738.06 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+			<tr>
+				<td> 3/24/16 </td>
+				<td> $61.65 </td>
+				<td> $735.30 </td>
+				<td> 10% </td>
+				<td> 90% </td>
+			</tr>
+		</table>
+		<br/>
+		<div class="resultStatement">
+			<span>
+				As of 6/3/2016, the 'Otto' portfolio outperformed the 50/50 'control' portfolio by 4.67%
+			</span>
+		</div>
+	</div>
+	<div class="experimentBlock adjust">
+		<p>Experiment #5</p>
+		<img src="static/experiment5.png" alt="MetLife &amp; Facebook" />
+		<table>
+			<tr>
+				<td><b> Date </b></td>
+				<td><b> $ MET </b></td>
+				<td><b> $ FB </b></td>
+				<td><b> % MET </b></td>
+				<td><b> % FB </b></td>
+			</tr>
+			<tr>
+				<td> 3/8/16 </td>
+				<td> $41.78 </td>
+				<td> $105.93 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/9/16 </td>
+				<td> $42.00 </td>
+				<td> $107.51 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/10/16 </td>
+				<td> $42.25 </td>
+				<td> $107.32 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/11/16 </td>
+				<td> $44.25 </td>
+				<td> $109.41 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/14/16 </td>
+				<td> $43.90 </td>
+				<td> $109.89 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/15/16 </td>
+				<td> $43.79 </td>
+				<td> $110.67 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/16/16 </td>
+				<td> $43.77 </td>
+				<td> $112.18 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/17/16 </td>
+				<td> $44.08 </td>
+				<td> $111.02 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/18/16 </td>
+				<td> $44.73 </td>
+				<td> $111.45 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/21/16 </td>
+				<td> $44.51 </td>
+				<td> $111.85 </td>
+				<td> 50% </td>
+				<td> 50% </td>
+			</tr>
+			<tr>
+				<td> 3/22/16 </td>
+				<td> $44.09 </td>
+				<td> $112.25 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/23/16 </td>
+				<td> $43.41 </td>
+				<td> $112.54 </td>
+				<td> 60% </td>
+				<td> 40% </td>
+			</tr>
+			<tr>
+				<td> 3/24/16 </td>
+				<td> $42.30 </td>
+				<td> $113.05 </td>
+				<td> 70% </td>
+				<td> 30% </td>
+			</tr>
+		</table>
+		<br/>
+		<div class="resultStatement bad">
+			<span>
+				As of 6/3/2016, the 'Otto' portfolio underperformed the 50/50 'control' portfolio by 0.32%
+			</span>
+		</div>
+	</div>
+	<div class="experimentBlock">
+		<p>Experiment #6</p>
+		<img src="static/experiment6.png" alt="Morgan Stanley &amp; American Airlines" />
+		<table>
+			<tr>
+				<td><b> Date </b></td>
+				<td><b> $ MS </b></td>
+				<td><b> $ AAL </b></td>
+				<td><b> % MS </b></td>
+				<td><b> % AAL </b></td>
+			</tr>
+			<tr>
+				<td> 3/8/16 </td>
+				<td> $25.01 </td>
+				<td> $40.77 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/9/16 </td>
+				<td> $24.61 </td>
+				<td> $41.65 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/10/16 </td>
+				<td> $24.65 </td>
+				<td> $41.63 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/11/16 </td>
+				<td> $26.00 </td>
+				<td> $42.47 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/14/16 </td>
+				<td> $25.91 </td>
+				<td> $42.59 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/15/16 </td>
+				<td> $25.43 </td>
+				<td> $42.11 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/16/16 </td>
+				<td> $25.16 </td>
+				<td> $42.31 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/17/16 </td>
+				<td> $25.85 </td>
+				<td> $42.10 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/18/16 </td>
+				<td> $26.28 </td>
+				<td> $43.44 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/21/16 </td>
+				<td> $25.94 </td>
+				<td> $43.47 </td>
+				<td> 40% </td>
+				<td> 60% </td>
+			</tr>
+			<tr>
+				<td> 3/22/16 </td>
+				<td> $25.84 </td>
+				<td> $42.76 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/23/16 </td>
+				<td> $25.27 </td>
+				<td> $41.92 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+			<tr>
+				<td> 3/24/16 </td>
+				<td> $24.93 </td>
+				<td> $40.50 </td>
+				<td> 30% </td>
+				<td> 70% </td>
+			</tr>
+		</table>
+		<br/>
+		<div class="resultStatement bad">
+			<span>
+				As of 5/27/2016, the 'Otto' portfolio underperformed the 50/50 'control' portfolio by 4.06% due to an <b>unforeseen anomaly</b> of a terrorist attack at the Brussels Airport on 3/22/16.
+			</span>
+		</div>
+	</div>
+	<div class="unforeseenAnomaly">
+		<span>
+			** An <b>unforeseen anomaly</b> is an occurrence that was so unexpected that the only way to capitalize on such an event would have been through clairvoyance and thus no market information could have allowed for a better optimization.
+		</span>
+	</div>
+</div>
+
+{% endblock %}

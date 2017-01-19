@@ -1,0 +1,100 @@
+{% extends "templates/base.html" %}
+{% block content %}
+<div class="pagetitle">
+	<p>Our Algorithm</p>
+</div>
+
+<!-- APPROACH 2 FOR DESIGN-->
+<!--<div class="subheaderBlack">
+	<img src="static/subheader.png" alt="Black background"/>
+	<p><b>User Inputs Portfolio</b></p>
+</div>
+<div class="part">
+	<div class="oddimage">
+		<img src="static/input.png" alt="input"/>
+	</div>
+	<div class="oddtext">
+		<p>What stocks do you own? And how many shares?</p>
+	</div>
+</div>
+
+<div class="subheaderBlack">
+	<img src="static/subheader.png" alt="Black background"/>
+	<p><b>Evaluates Every Stock</b></p>
+</div>
+<div class="part">
+	<div class="oddimage">
+		<img src="static/piece.png" alt="input"/>
+	</div>
+	<div class="oddtext">
+		<p>We evaluate each stock (aka puzzle piece) by determining all of its characteristics - current price, dividend yield, projected Return (25+ analyst opinions), and volatility.</p>
+	</div>
+</div> -->
+
+<div class="algorithmOverview">
+	<p>
+		Otto is an investment allocation algorithm that optimizes your portfolio in the most statically logical way. It is like the 'Moneyball' of wealth management.<br/><br/>
+
+		In 1952, Harry Markowitz developed the <a href="http://www.investopedia.com/terms/m/modernportfoliotheory.asp"> Modern Portfolio Theory</a> and brought in a new age of portfolio management. However, despite the effectiveness of the Markowitz Model, it is one of the most underutilized tools in wealth management due to the amount of time it takes to run the model. And that is why we sought to create Otto Investments. We wanted to level the playing field so all can have acccess to the Markowitz Model. Otto performs 50 minutes worth of calculations in a mere 3 minutes. <br/><br/>
+
+		The true innovation of Otto comes from how we have been adding to Markowitz's work. First, we analyze investment decisions while taking into context one's existing portfolio. In doing so, we take optimization to a new level by looking at the complete picture instead of one aspect. Additionally, we generate superior optimization results because we are able to more accurately predict return through consensus price targeting. While, an individual price target only stands a <a href="http://business.financialpost.com/investing/analysts-target-prices-rarely-accurate-global-study-finds">30% chance of being correct</a>, our use of 25+ analysts' price targets for each stock allows this accuracy to drastically improve to 68% based on the insight of <a href="http://www.penguinrandomhouse.com/books/175381/wisdom-of-crowds-by-james-surowiecki/"> Surowiecki's <i>Wisdom of Crowds</i></a>. The combination of these two additions have generated some pretty amazing results.<br/><br/>
+
+		Our algorithm is broken down into four pages, and below we describe what exactly happens on each of those four pages:
+	</p><br/>
+
+</div>
+
+
+<div class="sectioncontainer">
+	<div class="subheaderBlack">
+		<img src="static/subheader.png" alt="Black background"/>
+		<p><b>Page 1) User Inputs Portfolio</b></p>
+	</div>
+	<div class="algorithmIcon">
+		<img src="static/measure.png" alt="input" style="float: left;"/>
+	</div>
+	<div class="algorithmDescription">
+		<p>When the user inputs the tickers they own, and the respective shares, Otto calculates the projected return and volatility for each stock. After that, the algorithm then calculates a weighted average for both the return and the volatility to get the complete picture of the portfolio.</p>
+	</div>
+</div>
+
+<div class="sectioncontainer">
+	<div class="subheaderBlack">
+		<img src="static/subheader.png" alt="Black background"/>
+		<p><b>Page 2) Diagnoses Entire Portfolio</b></p>
+	</div>
+	<div class="algorithmIcon">
+		<img src="static/piece.png" alt="input" style="float: left;"/>
+	</div>
+	<div class="algorithmDescription">
+		<p>Otto just performed a full litany of calculations and so this page allows the user to see the level of understanding that the algorithm has of their portfolio. This page is truly meant for those that want to see what is going on under-the-hood.</p>
+	</div>
+</div>
+
+<div class="sectioncontainer">
+	<div class="subheaderBlack">
+		<img src="static/subheader.png" alt="Black background"/>
+		<p><b>Page 3) User Inputs Purchase</b></p>
+	</div>
+	<div class="algorithmIcon">
+		<img src="static/test.png" alt="input" style="float: left;"/>
+	</div>
+	<div class="algorithmDescription">
+		<p>The user then inputs the two stocks that are of interest to them as well as the amount of money they have to invest. Otto then evaluates the volatility and return for those stocks and subsequently simulates the outcome every possible combination in context of the portfolio.</p>
+	</div>
+</div>
+
+<div class="sectioncontainer">
+	<div class="subheaderBlack">
+		<img src="static/subheader.png" alt="Black background"/>
+		<p><b>Page 4) Delivers Optimal Result</b></p>
+	</div>
+	<div class="algorithmIcon">
+		<img src="static/winner.png" alt="input" style="float: left;"/>
+	</div>
+	<div class="algorithmDescription">
+		<p>Otto outputs the optimal investment allocation in percentage form that you should invest in to achieve the desired investment objective. These objective include - minimize risk, maximize return-to-risk (Sharpe Ratio), or maximize return.</p>
+	</div>
+</div>
+
+{% endblock %}

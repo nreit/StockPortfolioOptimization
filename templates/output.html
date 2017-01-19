@@ -1,0 +1,104 @@
+{% extends "templates/base.html" %}
+{% block content %}
+	<div class="pagetitle">
+		<p>Optimization Results</p>
+	</div>
+
+	<div class="optimizationoptions">
+		<div class="optoptions">
+			<img src="static/minrisk.png" alt="Risk minimization backgorund"/> 
+			<p>{{minrisk}}</p>
+		</div>
+		<div class="optoptions">
+			<img src="static/maxtradeoff.png" alt="Return-to-Risk tradeoff maximization backgorund"/> 
+			<p>{{maxsharpe}}</p>
+		</div>
+		<div class="optoptions">
+			<img src="static/maxreturn.png" alt="Return Maximization backgorund"/> 
+			<p>{{maxreturn}}</p>
+		</div>
+	</div>
+
+	<div class="results">
+		<table>
+			<tr>
+				<td> Stock Allocation Possibility </td>
+				<td> Portfolio Risk </td>
+				<td> Portfolio Return-to-Risk (Sharpe Ratio) </td>
+				<td> Portfolio Return </td>
+			</tr>
+			<tr>
+				<td> {{alloc0}} </td>
+				<td> {{volatility0}} </td>
+				<td> {{sharpe0}} </td>
+				<td> {{return0}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc1}} </td>
+				<td> {{volatility1}} </td>
+				<td> {{sharpe1}} </td>
+				<td> {{return1}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc2}} </td>
+				<td> {{volatility2}} </td>
+				<td> {{sharpe2}} </td>
+				<td> {{return2}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc3}} </td>
+				<td> {{volatility3}} </td>
+				<td> {{sharpe3}} </td>
+				<td> {{return3}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc4}} </td>
+				<td> {{volatility4}} </td>
+				<td> {{sharpe4}} </td>
+				<td> {{return4}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc5}} </td>
+				<td> {{volatility5}} </td>
+				<td> {{sharpe5}} </td>
+				<td> {{return5}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc6}} </td>
+				<td> {{volatility6}} </td>
+				<td> {{sharpe6}} </td>
+				<td> {{return6}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc7}} </td>
+				<td> {{volatility7}} </td>
+				<td> {{sharpe7}} </td>
+				<td> {{return7}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc8}} </td>
+				<td> {{volatility8}} </td>
+				<td> {{sharpe8}} </td>
+				<td> {{return8}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc9}} </td>
+				<td> {{volatility9}} </td>
+				<td> {{sharpe9}} </td>
+				<td> {{return9}} </td>
+			</tr>
+			<tr>
+				<td> {{alloc10}} </td>
+				<td> {{volatility10}} </td>
+				<td> {{sharpe10}} </td>
+				<td> {{return10}} </td>
+			</tr>
+		</table>
+		<br/>
+	</div>
+	<form action="/portfolio.html" method="GET">
+		<div class="progressfooter">
+			<input type="image" value="" src="static/p4bottom.png"/>
+		</div>
+
+{% endblock %}

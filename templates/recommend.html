@@ -1,0 +1,41 @@
+{% extends "templates/base.html" %}
+{% block content %}
+	<div class="pagetitle">
+		<p>Enter Your Purchase</p>
+	</div>
+
+	<div class="instructions">
+		<p>Enter the <b>ticker</b> of the stocks you want to purchase and the money of new money you want to invest in those stocks.</p>
+	</div>
+	
+	<div class="" style="width: 480px; margin: 0 auto; margin-top: 50px;" id="form_wrapper">
+		<img src="https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif" id="gif" style="display: block; left: 45%; width: 100px; visibility: hidden; position: absolute; z-index: 99;">
+	<div class="form">
+		<form action="/output.html" method="POST">
+			<div class="purchase">
+				<label> First Stock I'm Buying: <input type = "text" name = "stockpurchase1"></label><br/>
+				<label> Second Stock I'm Buying: <input type = "text" name = "stockpurchase2"></label>
+				<br/>
+			</div>
+			<div class="dollarinvestment">
+				<label> How much money I have to invest: <input type = "text" name="moneyinvestment"></label>
+			</div>
+			<br/>
+			<input type="image" value="" src="static/analyze.png"/>
+		</div>
+		<div class="progressfooter">
+			<input type="image" value="" src="static/p3bottom.png"/>
+		</div>
+	</form>
+
+	</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$('.form').submit(function() {
+		$('#gif').css('visibility', 'visible');
+	return true;
+	});
+	</script>
+
+{% endblock %}

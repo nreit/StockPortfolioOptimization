@@ -1,0 +1,79 @@
+{% extends "templates/base.html" %}
+{% block content %}
+	<div class="pagetitle">
+		<p>Enter Your Portfolio</p>
+	</div>
+
+	<div class="instructions">
+		<p>Enter the <b>ticker</b> of the stocks you own and the respective number shares (i.e. "AAPL" ... "20").</p>
+	</div>
+
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<div class="" style="width: 480px; margin: 0 auto; margin-top: 50px;" id="form_wrapper">
+	<img src="https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif" id="gif" style="display: block; left: 45%; width: 100px; visibility: hidden; position: absolute; z-index: 99;">
+	<div class="form">
+	<form action="/diagnosis.html" method="POST">
+	<div class="stockinput_portfolio">
+		<label> Stock 1:  <input type = "text" name = "stock1" value="GE"></label>
+		<label> <input type = "text" name = "shares1" value = "5"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 2:  <input type = "text" name = "stock2" value = "JNJ"></label>
+		<label> <input type = "text" name = "shares2" value = "2"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 3:  <input type = "text" name = "stock3"></label>
+		<label> <input type = "text" name = "shares3"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 4:  <input type = "text" name = "stock4"></label>
+		<label> <input type = "text" name = "shares4"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 5:  <input type = "text" name = "stock5"></label>
+		<label> <input type = "text" name = "shares5" ></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 6:  <input type = "text" name = "stock6"></label>
+		<label> <input type = "text" name = "shares6"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 7:  <input type = "text" name = "stock7"></label>
+		<label> <input type = "text" name = "shares7"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 8:  <input type = "text" name = "stock8"></label>
+		<label> <input type = "text" name = "shares8"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 9:  <input type = "text" name = "stock9"></label>
+		<label> <input type = "text" name = "shares9"></label>
+	</div>
+	<div class="stockinput_portfolio">
+		<label> Stock 10: <input type = "text" name = "stock10"></label>
+		<label> <input type = "text" name = "shares10"></label>
+	</div>
+	</br>
+	<input type="image" value="" src="static/analyze.png"/>
+</div>
+
+	<div class="progressfooter">
+		<input type="image" value="" src="static/p1bottom.png"/>
+	</div>
+
+</form>
+
+</div>
+</div>
+<script type="text/javascript">
+$('.form').submit(function() {
+	$('#gif').css('visibility', 'visible');
+	return true;
+});
+</script>
+	<!--<div class="warning">
+		<p><i>* WARNING: The system will be a bit slow due to the large number of calculations being performed and since we only have the money to run on one server for now.*</i></p>
+	</div> -->
+
+{% endblock %}

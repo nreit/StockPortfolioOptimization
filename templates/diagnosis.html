@@ -1,0 +1,138 @@
+{% extends "templates/base.html" %}
+{% block content %}
+
+	<div class="pagetitle">
+		<p>Diagnosis of Portfolio</p>
+	</div>
+	
+	<div class="bigthreenumbers">
+		<div class="sidepercent">
+			<img src="static/growth.png" alt="Growth percentage backgorund"/> 
+			<p>{{portfolioreturn}}</p>
+		</div>
+		<div class="value">
+			<img src="static/value.png" alt="Return percentage backgorund"/> 
+			<p><b>{{totalvalue}}</b></p>
+		</div>
+		<div class="sidepercent">
+			<img src="static/volatility.png" alt="Volatility percentage backgorund"/> 
+			<p>{{portfoliovolatility}}</p>
+		</div>
+	</div>
+
+	<div class="data">
+		<table>
+			<tr>
+				<td><b> Stock </b></td>
+				<td><b> Allocation % </b></td>
+				<td><b> Price </b></td>
+				<td><b> Yearly Dividend </b></td>
+				<td><b> Price Target </b></td>
+				<td><b> Projected Growth </b></td>
+				<td><b> Volatility </b></td>
+			</tr>
+			<tr>
+				<td> {{stock1}} </td>
+				<td> {{allocation1}} </td>
+				<td> {{price1}} </td>
+				<td> {{dividend1}} </td>
+				<td> {{target1}} </td>
+				<td> {{growth1}} </td>
+				<td> {{volatility1}} </td>
+			</tr>
+			<tr>
+				<td> {{stock2}} </td>
+				<td> {{allocation2}} </td>
+				<td> {{price2}} </td>
+				<td> {{dividend2}} </td>
+				<td> {{target2}} </td>
+				<td> {{growth2}} </td>
+				<td> {{volatility2}} </td>
+			</tr>
+			<tr>
+				<td> {{stock3}} </td>
+				<td> {{allocation3}} </td>
+				<td> {{price3}} </td>
+				<td> {{dividend3}} </td>
+				<td> {{target3}} </td>
+				<td> {{growth3}} </td>
+				<td> {{volatility3}} </td>
+			</tr>
+			<tr>
+				<td> {{stock4}} </td>
+				<td> {{allocation4}} </td>
+				<td> {{price4}} </td>
+				<td> {{dividend4}} </td>
+				<td> {{target4}} </td>
+				<td> {{growth4}} </td>
+				<td> {{volatility4}} </td>
+			</tr>
+			<tr>
+				<td> {{stock5}} </td>
+				<td> {{allocation5}} </td>
+				<td> {{price5}} </td>
+				<td> {{dividend5}} </td>
+				<td> {{target5}} </td>
+				<td> {{growth5}} </td>
+				<td> {{volatility5}} </td>
+			</tr>
+			<tr>
+				<td> {{stock6}} </td>
+				<td> {{allocation6}} </td>
+				<td> {{price6}} </td>
+				<td> {{dividend6}} </td>
+				<td> {{target6}} </td>
+				<td> {{growth6}} </td>
+				<td> {{volatility6}} </td>
+			</tr>
+			<tr>
+				<td> {{stock7}} </td>
+				<td> {{allocation7}} </td>
+				<td> {{price7}} </td>
+				<td> {{dividend7}} </td>
+				<td> {{target7}} </td>
+				<td> {{growth7}} </td>
+				<td> {{volatility7}} </td>
+			</tr>
+			<tr>
+				<td> {{stock8}} </td>
+				<td> {{allocation8}} </td>
+				<td> {{price8}} </td>
+				<td> {{dividend8}} </td>
+				<td> {{target8}} </td>
+				<td> {{growth8}} </td>
+				<td> {{volatility8}} </td>
+			</tr>
+			<tr>
+				<td> {{stock9}} </td>
+				<td> {{allocation9}} </td>
+				<td> {{price9}} </td>
+				<td> {{dividend9}} </td>
+				<td> {{target9}} </td>
+				<td> {{growth9}} </td>
+				<td> {{volatility9}} </td>
+			</tr>
+			<tr>
+				<td> {{stock10}} </td>
+				<td> {{allocation10}} </td>
+				<td> {{price10}} </td>
+				<td> {{dividend10}} </td>
+				<td> {{target10}} </td>
+				<td> {{growth10}} </td>
+				<td> {{volatility10}} </td>
+			</tr>
+		</table>
+	</div>
+	<form action="/recommend.html" method="POST">
+		<div class="proceed">
+			<input type="image" value="" src="static/proceed.png"/>
+		</div>
+		<div class="progressfooter">
+			<input type="image" value="" src="static/p2bottom.png"/>
+		</div>
+	</form>
+
+
+	<br/>
+
+{% endblock %}

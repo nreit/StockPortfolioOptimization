@@ -1,0 +1,24 @@
+{% extends "templates/base.html" %}
+{% block content %}
+	<div class="pagetitle">
+		<p>Propose a Feature</p>
+	</div>
+
+	<div class="contactUsButtons">
+		<button type="button" class="active"><a href="newfeature.html">Propose a Feature</a></button>
+		<button type="button"><a href="foundbug.html">Report a Bug</a></button>
+		<button type="button"><a href="connect.html">Connect With Us</a></button>
+	</div>
+
+	<div class="contactUsForm">
+		<form action="MAILTO:ottoinvestment@gmail.com" method="post">
+			<label>Name: <input type = "text" size="50" name="Name"></label><br/>
+			<label>Contact Information: <input type = "text" size="30" name="Contact Info"></label><br/>
+			<label>Subject: <input type = "text" size="48" name="Subject"></label><br/><br/>
+			<label><i>We're pumped to hear your ideas! What did you have in mind?<i/> <br/><textarea name="Message" rows="5" cols="50"></textarea></label><br/><br/>
+			<input type="submit" value="Send">
+		</form>
+	</div>
+
+
+{% endblock %}
