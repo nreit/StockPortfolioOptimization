@@ -1,0 +1,387 @@
+body{
+	background-image: url("dgray.png");
+	color: black;
+	font-family: sans-serif;
+	font-family: avenir;
+	line-height: 150%;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+h1{
+	text-align: center;
+	font-family: Arial !important;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+li {
+	list-style-type: none;
+	display: inline;
+}
+li a{
+	color: gray;
+	font-family: avenir;
+	display: inline;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none;
+	float: right;
+}
+.logo{
+	clear: both;
+	position: fixed;
+	display: inline;
+	padding-top: 0px;
+	padding-left: 8px;
+	z-index: 3;
+}
+.pagetitle{
+	color: black;
+	font-family: avenir;
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 20px;
+	font-size: 60px;
+}
+
+/*Home page */
+.homeLogo{
+	padding-top: 5%;
+	margin: 0 auto;
+	text-align: center;
+}
+.sectionicons{
+	text-align: center;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+.specificsectionicon{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.testresultsbar {
+	display: inline;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: -10px;
+}
+.testresultsbar img {
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	bottom: 0;
+	display: inline;
+	margin: 0 auto;
+	text-align: center;
+}
+.testresultsbar span {
+	color: white;
+	font-family: avenir;
+	font-size: 25px;
+	width: 100%;
+	margin: 0 auto;
+	display: inline;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	padding-bottom: 25px;
+}
+/*.homebottombar {
+	width: 100%;
+	height: 75px;
+}*/
+
+/*About Us */
+.aboutusbanner img{
+	width: 100%;
+	top: 50px;
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+.biographySection{
+	margin-top: -25px;
+	margin-bottom: 100px;
+}
+.personIndividual{
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.personPicture{
+	display: inline;
+	float: left;
+}
+.personBiography{
+	display: inline;
+	margin-left: 75px;
+	top: 10%;
+}
+
+/*Our Algorithm */
+.algorithmOverview p{
+	line-height: 1.75em;
+	text-align: center;
+	margin: 0px 50px -20px 50px;
+}
+.sectioncontainer{
+	display: inline-block;
+	margin-top: 40px;
+}
+.subheaderBlack img{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	display: inline;
+	margin: 0 auto;
+	text-align: center;
+}
+.subheaderBlack p{
+	color: white;
+	font-family: avenir;
+	font-size: 25px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	width: 100%;
+	margin: 0 auto;
+	display: inline;
+	position: absolute;
+	text-align: center;
+}
+.algorithmIcon{
+	position: static;
+	left: 20px;
+	margin-top: 125px;
+}
+.algorithmDescription{
+	position: static;
+	display: inline;
+	left: 120px;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 10px;
+	top: 50%;
+	font-size: 25px;
+	line-height: 200%;
+}
+.video{
+	display: inline-block;
+	text-align: center;
+	margin-left: 30%;
+	padding-top: 150px;
+}
+
+/* Results */
+.experimentOverview{
+	line-height: 1.75em;
+	text-align: center;
+	margin: 0px 50px -20px 50px;
+}
+.experimentsContainer{
+	margin-top: 100px;
+	text-align: center;
+}
+.experimentBlock{
+	display: inline-block;
+	padding: 25px;
+}
+.experimentBlock p{
+	font-size: 25px;
+	font-weight: bold;
+}
+.experimentBlock img{
+	padding-bottom: 25px;
+}
+.experimentBlock table{
+	width: 450px;
+}
+.resultStatement{
+	padding: 10px;
+	width: 400px;
+	margin: 0 auto;
+	background-color: green;
+	color: white;
+}
+.bad {
+	background-color: red;
+}
+.unforeseenAnomaly{
+	text-align: center;
+	margin: 25px;
+}
+
+/*Contact Us*/
+.contactUsMessage{
+	margin: 100px;
+	text-align: center;
+	line-height: 200%;
+	font-size: 18px;
+}
+button{
+	margin-top: -25px;
+	position: relative;
+	display: inline;
+	background-color: #E8E8E8;
+	font-size: 16px;
+	border: 2px solid white;
+	padding: 15px 32px;
+	margin-right: 50px;
+}
+.active{
+	background-color: white;
+	color: black;
+	border: 1px solid #7F7F7F;
+}
+.contactUsButtons{
+	text-align: center;
+}
+.contactUsForm{
+	position: relative;
+	text-align: center;
+	margin-top: 100px;
+}
+.connect{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.personContainer{
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.personPic{
+	display: inline-block;
+}
+.personSpecialization{
+	display: inline-block;
+	margin-left: 75px;
+	top: 50%;
+}
+.personSpecialization img{
+	margin-right: 20px;
+}
+
+/*Portfolio */
+.instructions{
+	text-align: center;
+	margin-top: -25px;
+}
+.form{
+	text-align: center;
+	margin-top: 10px;
+}
+label{
+	margin-right: 20px;
+}
+.stockinput_portfolio{
+	margin-top: 10px;
+}
+input{
+	color: black;
+	font-family: avenir;
+}
+.warning{
+	text-align: center;
+	color: #7F7F7F;
+	margin-top: 30px;
+	font-size: 12px;
+}
+.progressfooter input{
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	margin-top: 50px;
+}
+
+/* Diagnosis */
+.bigthreenumbers{
+	text-align: center;
+	margin-bottom: 100px;
+}
+.sidepercent{
+	position: relative;
+	display: inline;
+	margin-right: 75px;
+	margin-left: 75px;
+}
+.sidepercent p{
+	position: absolute;
+	display: inline;
+	color: white;
+	font-size: 40px;
+	left: 0px;
+	padding-top: 55px;
+	text-align: center;
+	width: 100%;
+}
+.value{
+	position: relative;
+	display: inline;
+}
+.value p{
+	position: absolute;
+	display: inline;
+	color: white;
+	font-size: 55px;
+	left: 0px;
+	padding-top: 20px;
+	text-align: center;
+	width: 100%;
+}
+table{
+	text-align: center;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.data{
+	text-align: center;
+}
+.proceed{
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*Recommend Page */
+.purchase{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+/* Output page */
+.optimizationoptions{
+	text-align: center;
+	margin-top: -25px;
+	margin-bottom: 25px;
+}
+.optoptions{
+	position: relative;
+	display: inline;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.optoptions p{
+	position: absolute;
+	display: inline;
+	color: black;
+	font-size: 25px;
+	left: 0px;
+	padding-top: 8px;
+	text-align: center;
+	width: 100%;
+}
+.table{
+	text-align: center;
+	position: relative;
+	padding-top: 0px;
+}
